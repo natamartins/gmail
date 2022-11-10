@@ -1,0 +1,17 @@
+.container-main {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+
+  input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #999;
+  }
+
+  &_card-form {
+    width: 300px;
+    margin: auto;
+    display: grid;
+  }
+}
