@@ -13,7 +13,7 @@
     height: 200px;
     margin: auto;
     margin-top: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     position: relative;
   }
 
@@ -24,15 +24,17 @@
     justify-content: center;
     border-bottom: 2px solid rgb(158, 157, 157);
   }
+
   &_list-one li {
     font-size: 15px;
   }
+
   &_list-one img {
     width: 20px;
   }
 
   &_list-one :nth-child(3) {
-    border-bottom: 2px solid rgb(16, 162, 57);
+    border-bottom: 4px solid rgb(16, 162, 57);
   }
   &_list-one :nth-child(4) {
     position: absolute;
@@ -48,9 +50,11 @@
     justify-content: center;
     background-color: #e9e9e9;
   }
+
   &_list-two li {
     padding: 5px;
   }
+
   &_list-two img {
     width: 15px;
   }
@@ -61,24 +65,29 @@
     height: 10px;
   }
 
-  &_list-two :nth-child(2) span {
+  &_list-two :nth-child(3) span {
     background-color: green;
     color: white;
-    padding: 0 3px;
+    padding: 2px 5px;
     font-size: 12px;
     border-radius: 10px;
     margin-left: 5px;
   }
 
+  &_list-two :nth-child(4) span {
+    color: #555;
+  }
+
   &_list-three {
     width: 800px;
     margin: auto;
-    background-color: rgb(224, 224, 224);
-    padding: 10px;
+    box-shadow: 0px 0px 5px #333;
+    padding: 20px;
     border-radius: 5px;
   }
+
   &_list-three li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &_list-two-cursor-pointer div {
@@ -88,31 +97,22 @@
     left: 50%;
     top: 10px;
   }
+
+  &_animated-img img {
+    position: absolute;
+    width: 150px;
+    top: 60px;
+    left: 50px;
+    animation: click 4.5s ease infinite;
+  }
 }
 
 @keyframes click {
   0% {
-    margin-top: 0%;
-    background: url(../img/cursor.png) 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 15px;
+    bottom: 0%;
   }
-
-  50% {
-    margin-top: 5%;
-    background: url(../img/Group.svg) 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 40px;
-  }
-
   100% {
-    margin-left: -25%;
-    margin-top: -1%;
-    background: url(../img/Group.svg) 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 40px;
+    top: 10px;
+    left: 200px;
   }
 }

@@ -5,12 +5,14 @@ import socil from "../img/comercial.svg";
 import promocao from "../img/rotulo.svg";
 import estrela from "../img/estrela.png";
 import verifica from "../img/verifica.png";
+import cursor from "../img/Group.svg";
+
 export const CardMain = ({ test }) => {
   return (
     <div className="card-guia">
       <h1>
-        O email de confirmação que enviamos para wee@gmail.com possivelmente
-        caiu na caixa de Promoções do seu Gmail.
+        O email de confirmação que enviamos para você possivelmente caiu na
+        caixa de Promoções do seu Gmail.
       </h1>
       <div className="card-guia-card">
         <ul className="card-guia_list-one">
@@ -28,6 +30,9 @@ export const CardMain = ({ test }) => {
           <div></div>
         </span>
         <ul className="card-guia_list-two">
+          <li className="card-guia_animated-img">
+            <img src={cursor} alt="" />
+          </li>
           <li>
             <img src={verifica} alt="" />
           </li>
@@ -39,13 +44,15 @@ export const CardMain = ({ test }) => {
             Importande: confirme sua inscrição na NewSletter! -
             <span> click no botão</span>
           </li>
-          <li>16:20</li>
+          <li>
+            <span>16:20</span>
+          </li>
         </ul>
       </div>
       <ul className="card-guia_list-three">
-        <li>1 passo: Click na caixa Promoções</li>
-        <li>2 passo: Click e arraste seu email para caixa Principal</li>
-        <li>3 passo: Agora verifique sua caixa Principal</li>
+        <li>1 - passo: Click na caixa Promoções</li>
+        <li>2 - passo: Click e arraste seu email para caixa Principal</li>
+        <li>3 - passo: Agora verifique sua caixa Principal</li>
       </ul>
     </div>
   );

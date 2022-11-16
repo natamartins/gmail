@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./page/home/index";
 import { CardMain } from "./components/CardGmail";
+import { Home } from "./page/home/index";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/GuiaGmail" element={<CardMain />} />
+        <Route path="/GuiaGmail" element={<CardMain />} />;
       </Routes>
     </BrowserRouter>
   );

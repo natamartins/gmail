@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import developer from "../../img/envelope.svg";
 
 export function Home() {
   const [email, setEmail] = useState("");
@@ -26,7 +27,7 @@ export function Home() {
   return (
     <>
       <div className="container-main">
-        <img src="" alt="" />
+        <img src={developer} alt="" />
         <h1>Notícias de Tecnologia para quem não tem tempo de ler notícias.</h1>
         <div className="container-main_card-form">
           <input
@@ -36,7 +37,6 @@ export function Home() {
             placeholder="Seu Email Principal..."
             onChange={handleChange}
           />
-
           <button onClick={handleSubmit}>Enviar</button>
         </div>
       </div>

@@ -2,11 +2,36 @@
   max-width: 600px;
   text-align: center;
   margin: auto;
+  margin-top: 30%;
+
+  img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
 
   input {
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #999;
+  }
+
+  button {
+    background: rgb(82, 177, 255);
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px;
+    color: #fff;
+  }
+
+  button:hover {
+    background: rgb(143, 205, 255);
+    transition: ease-in-out;
   }
 
   &_card-form {
