@@ -39,10 +39,6 @@
     right: 22.5%;
     top: 10%;
   }
-  &_list-one :nth-child(4) img {
-    width: 15px;
-    animation: slidein 2.5s linear infinite;
-  }
 
   &_list-two {
     display: flex;
@@ -85,30 +81,38 @@
     margin-bottom: 20px;
   }
 
-  &_list-two-cursor-pointer img {
-    animation: click 4s linear infinite;
+  &_list-two-cursor-pointer div {
+    width: 200px;
+    animation: click 4.5s ease-out infinite;
     position: absolute;
-    left: 17%;
-    width: 20%;
+    left: 50%;
+    top: 10px;
   }
 }
 
 @keyframes click {
-  from {
-    margin-top: -3%;
+  0% {
+    margin-top: 0%;
+    background: url(../img/cursor.png) 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
   }
 
-  to {
-    margin-top: -8%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
+  50% {
+    margin-top: 5%;
+    background: url(../img/Group.svg) 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
   }
 
-  to {
-    margin-left: 0%;
+  100% {
+    margin-left: -25%;
+    margin-top: -1%;
+    background: url(../img/Group.svg) 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
   }
 }

@@ -4,12 +4,14 @@ import inbox from "../img/envelope.svg";
 import socil from "../img/comercial.svg";
 import promocao from "../img/rotulo.svg";
 import estrela from "../img/estrela.png";
-import cursorone from "../img/Group.svg";
-import cursortwo from "../img/cursor.png";
 import verifica from "../img/verifica.png";
 export const CardMain = ({ test }) => {
   return (
     <div className="card-guia">
+      <h1>
+        O email de confirmação que enviamos para wee@gmail.com possivelmente
+        caiu na caixa de Promoções do seu Gmail.
+      </h1>
       <div className="card-guia-card">
         <ul className="card-guia_list-one">
           <li>
@@ -21,10 +23,10 @@ export const CardMain = ({ test }) => {
           <li>
             <img src={promocao} alt="" /> Promoções
           </li>
-          <li>
-            <img src={cursortwo} alt="" />
-          </li>
         </ul>
+        <span className="card-guia_list-two-cursor-pointer">
+          <div></div>
+        </span>
         <ul className="card-guia_list-two">
           <li>
             <img src={verifica} alt="" />
@@ -38,9 +40,6 @@ export const CardMain = ({ test }) => {
             <span> click no botão</span>
           </li>
           <li>16:20</li>
-          <span className="card-guia_list-two-cursor-pointer">
-            <img src={cursorone} alt="" />
-          </span>
         </ul>
       </div>
       <ul className="card-guia_list-three">

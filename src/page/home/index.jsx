@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function Home() {
   const [email, setEmail] = useState("");
+  let navigate = useNavigate();
 
-  function isValidEmail(email) {
+  const isValidEmail = (email) => {
     return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
-  }
+  };
 
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -15,8 +16,12 @@ export function Home() {
 
   const handleSubmit = () => {
     if (!isValidEmail(email)) return alert("Ops!, digite um email valido.");
-    return alert("Sucesso :)");
+    return handleTeste();
   };
+
+  function handleTeste() {
+    navigate("/GuiaGmail");
+  }
 
   return (
     <>
