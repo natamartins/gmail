@@ -32,10 +32,16 @@
   &_list-one img {
     width: 20px;
   }
+  &_list-one li:nth-child(1) {
+    animation: show 4s ease-in-out infinite;
+    padding: 3px;
+    border-radius: 3px;
+  }
 
   &_list-one :nth-child(3) {
     border-bottom: 4px solid rgb(16, 162, 57);
   }
+
   &_list-one :nth-child(4) {
     position: absolute;
     right: 22.5%;
@@ -103,7 +109,7 @@
     width: 150px;
     top: 60px;
     left: 50px;
-    animation: click 4.5s ease infinite;
+    animation: click 4s ease-in-out infinite;
   }
 }
 
@@ -114,5 +120,14 @@
   100% {
     top: 10px;
     left: 200px;
+  }
+}
+
+@keyframes show {
+  0% {
+    border: 2px solid transparent;
+  }
+  100% {
+    border: 2px solid red;
   }
 }
