@@ -1,5 +1,6 @@
 import React from "react";
 
+// import imgs
 import inbox from "../img/envelope.svg";
 import socil from "../img/comercial.svg";
 import promocao from "../img/rotulo.svg";
@@ -7,14 +8,14 @@ import estrela from "../img/estrela.png";
 import verifica from "../img/verifica.png";
 import cursor from "../img/Group.svg";
 
-export const CardMain = ({ test }) => {
+export const CardMain = () => {
   return (
     <div className="card-guia">
       <h1>
         O email de confirmação que enviamos para você possivelmente caiu na
         caixa de Promoções do seu Gmail.
       </h1>
-      <div className="card-guia-card">
+      <div className="card-guia_container">
         <ul className="card-guia_list-one">
           <li>
             <img src={inbox} alt="" /> Principal
@@ -26,9 +27,6 @@ export const CardMain = ({ test }) => {
             <img src={promocao} alt="" /> Promoções
           </li>
         </ul>
-        <span className="card-guia_list-two-cursor-pointer">
-          <div></div>
-        </span>
         <ul className="card-guia_list-two">
           <li className="card-guia_animated-img">
             <img src={cursor} alt="" />

@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CardMain } from "./components/CardGmail";
-import { Home } from "./page/home/index";
+import { Home } from "./page/home";
 
 function App() {
   return (

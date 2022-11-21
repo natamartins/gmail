@@ -3,10 +3,9 @@
   h1 {
     margin: auto;
     text-align: center;
-    width: 900px;
+    width: 800px;
   }
-
-  &-card {
+  &_container {
     border-radius: 5px;
     box-shadow: 0px 0px 6px #333;
     width: 800px;
@@ -33,7 +32,7 @@
     width: 20px;
   }
   &_list-one li:nth-child(1) {
-    animation: show 4s ease-in-out infinite;
+    animation: showborder 4s ease-in-out infinite;
     padding: 3px;
     border-radius: 3px;
   }
@@ -123,7 +122,7 @@
   }
 }
 
-@keyframes show {
+@keyframes showborder {
   0% {
     border: 2px solid transparent;
   }
